@@ -18,7 +18,7 @@
   ?>
 
   <div class="jumbotron">
-        <?php echo do_shortcode("[metaslider id=16]"); ?>
+        <?php //echo do_shortcode("[metaslider id=16]"); ?>
   </div>
 
   <div class="container">
