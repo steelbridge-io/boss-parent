@@ -38,12 +38,6 @@
     </div><!-- END OF .navbar-header -->
       
     <div id="main-nav-wrap">
-        <?php
-        /*  if (has_nav_menu('primary_navigation')) :
-            wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav nav-pills'));
-          endif; */
-        ?>
-      
       
       <?php
         wp_nav_menu( array(
