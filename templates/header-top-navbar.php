@@ -39,10 +39,24 @@
       
     <div id="main-nav-wrap">
         <?php
-          if (has_nav_menu('primary_navigation')) :
+        /*  if (has_nav_menu('primary_navigation')) :
             wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav nav-pills'));
-          endif;
+          endif; */
         ?>
+      
+      
+      <?php
+        wp_nav_menu( array(
+        'theme_location'    => 'primary_navigation',
+        'depth'             => 3,
+        'container'         => 'div',
+        'container_class'   => 'collapse navbar-collapse',
+        'container_id'      => 'bs-example-navbar-collapse-1',
+        'menu_class'        => 'nav navbar-nav nav-pills',
+        'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+        'walker'            => new WP_Bootstrap_Navwalker(),
+      ) );?>
+      
     </div>
       
   </div>
