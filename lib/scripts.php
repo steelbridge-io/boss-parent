@@ -29,13 +29,14 @@ function roots_scripts() {
   }
 
   wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.7.0.min.js', array(), null, false);
-  wp_register_script('roots_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', array(), 'ab381004153e2894a3f3e4c5dd82936a', true);
+ // wp_register_script('roots_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', array(),
+  // 'ab381004153e2894a3f3e4c5dd82936a', true);
   wp_register_script('datatables','https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js');
   wp_register_script('datainit', get_template_directory_uri() . '/assets/js/datainit.js');
   wp_enqueue_script('modernizr');
   wp_enqueue_script('jquery');
   wp_enqueue_script('giving',get_template_directory_uri() . '/assets/js/giving.js');
-  wp_enqueue_script('roots_scripts');
+ // wp_enqueue_script('roots_scripts');
   wp_enqueue_script('datatables');
   wp_enqueue_script('datainit');
 
