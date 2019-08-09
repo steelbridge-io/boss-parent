@@ -28,7 +28,7 @@ class Roots_Sidebar {
       $this->display = false;
     }
   }
-
+  
   private function check_conditional_tag($conditional_tag) {
     if (is_array($conditional_tag)) {
       return $conditional_tag[0]($conditional_tag[1]);
@@ -36,7 +36,7 @@ class Roots_Sidebar {
       return $conditional_tag();
     }
   }
-
+  
   private function check_page_template($page_template) {
     return is_page_template($page_template);
   }
