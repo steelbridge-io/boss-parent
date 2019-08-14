@@ -19,7 +19,7 @@
 
   <div>
       <?php // DISPLAY MAP MASHUP
-        echo do_shortcode('[mashup width="100%" height="300" query="current" hideEmpty="true"]'); 
+       // echo do_shortcode('[mashup width="100%" height="300" query="current" hideEmpty="true"]');
       ?>
   </div>
 

@@ -19,7 +19,7 @@
 
   <div id="top-link" style="width:100%;">
       <?php // DISPLAY MAP MASHUP
-        echo do_shortcode('[mashup width="100%" height="300" query="post_type=programs" hideEmpty="true"]'); 
+        //echo do_shortcode('[mashup width="100%" height="300" query="post_type=programs" hideEmpty="true"]');
       ?>
   </div>
 
